@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Merchant app</string>
+
+    <!--Payment Methods -->
+    <string name="payment_generic_blik_code_not_provided">Nie wprowadzono kodu BLIK</string>
+
+    <!-- Payment Results -->
+    <string name="payment_status_success">Transakcja została zakończona, nie trzeba dokonyważ żadnej dodatkowej autoryzacji</string>
+    <string name="payment_status_error">Podczas transakcji wystąpił bład</string>
+    <string name="payment_status_warning_continue_cvv">Należy dokonać dodatkowej autoryzacji wpisując kod CVV</string>
+    <string name="payment_cancel">Płatność została anulowana</string>
+    <string name="payment_blik_ambiguity">Wybrano BLIKa: %1$s</string>
+
+    <string name="prompt_login">POSID</string>
+    <string name="prompt_client_secret">Client secret</string>
+    <string name="save_credentials">Zapisz dane logowania</string>
+    <string name="login">Login</string>
+    <string name="login_failed">"Logowanie się nie powiodło!"</string>
+
+    <string name="invalid_access_token">Niepoprawny access token!</string>
+
+
+    <string name="choose_theme_title">Wybierz styl aplikacji</string>
+    <string name="theme_light">Jasny</string>
+    <string name="theme_dark">Ciemny</string>
+    <string name="theme_default">Domyślny systemu</string>
+</resources>
