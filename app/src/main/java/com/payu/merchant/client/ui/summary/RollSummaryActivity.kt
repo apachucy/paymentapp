@@ -234,8 +234,23 @@ class RollSummaryActivity : ActivityWithMenu() {
         }
     }
 
+    override fun onDestroy() {
+        Log.v("Damian", "OnDestroy Called")
+        super.onDestroy()
+    }
+
+    override fun onStart() {
+        Log.v("Damian", "onStart Called")
+        super.onStart()
+    }
+
+    override fun onStop() {
+        Log.v("Damian", "onStop Called")
+        super.onStop()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.v("Damian", "OnCreate Called")
         AndroidInjection.inject(this)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_roll_summary)
         binding.model = viewModel

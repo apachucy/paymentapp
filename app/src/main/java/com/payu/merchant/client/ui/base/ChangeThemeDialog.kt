@@ -37,14 +37,6 @@ class ChangeThemeDialog : DialogFragment() {
                     when (which) {
                         DAY_MODE_POSITION -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                         NIGHT_MODE_POSITION -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                        else -> when (Build.VERSION.SDK_INT) {
-                            Build.VERSION_CODES.P -> AppCompatDelegate.setDefaultNightMode(
-                                AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY
-                            )
-                            Build.VERSION_CODES.Q -> AppCompatDelegate.setDefaultNightMode(
-                                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
-                            )
-                        }
                     }
                     dismiss()
                 }
